@@ -1,0 +1,213 @@
+/* ----------------------------- */
+/* Body */
+/* ----------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+body {
+  background:white;
+  overflow:hidden;
+}
+
+/* ----------------------------- */
+/* Navbar */
+/* ----------------------------- */
+.navbar{
+  height:60px;
+  background-color:rgb(28,82,190); 
+}
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+/* ----------------------------- */
+/* headings */
+/* ----------------------------- */
+h3 {
+  margin: 32px 0;
+  color:black;
+  font-weight:bold;
+}
+h5{
+  margin-left:10px;
+  color:black;
+  font-weight:bold;
+}
+#completed{
+  text-decoration: line-through;
+}
+
+#grayed{
+  color:grey;
+}
+#title{
+  margin-top:30px;
+  margin-left:80px;
+}
+
+/* ----------------------------- */
+/* todo components */
+/* ----------------------------- */
+.todo-app {
+  min-height: 800px;
+  background:rgb(243,244,248) ;
+}
+.todo-form {
+  margin-bottom: 32px;
+}
+.todo-input {
+  padding: 12px 30px 12px 15px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgb(28,82,190);
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: black;
+}
+.todo-input::placeholder {
+  color: black;
+}
+.todo-button {
+  padding: 15px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background:rgb(28,82,190);
+  color: #fff;
+  text-transform: capitalize;
+}
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+.todo-button.edit {
+  background:rgb(28,82,190);
+  padding: 16px 22px;
+}
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color:black;
+  background: white;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+/* ----------------------------- */
+/* search related component*/
+/* ----------------------------- */
+#search{
+  width:500px;
+  border-radius:10px;
+  margin-left:100px;
+}
+.search{
+  margin-bottom:20px;
+}
+
+/* ----------------------------- */
+/* Centre Div */
+/* ----------------------------- */
+.main{
+  background-color:white;
+  width:940px;
+  margin-left:100px;
+  margin-top:20px;
+  border-radius:6px;
+}
+.card{
+  margin-left:50 px;
+}
+
+/* ----------------------------- */
+/* icons */
+/* ----------------------------- */
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+.delete-icon {
+  margin-right: 5px;
+  color: black;
+}
+.edit-icon {
+  color: black;
+}
+
+/* ----------------------------- */
+/* Style The Dropdown Button */
+/* ----------------------------- */
+.dropbtn {
+  background-color:rgb(243,244,248) ;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width:160px;
+}
+
+/* ----------------------------- */
+/* The container <div> - needed to position the dropdown content */
+/* ----------------------------- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* ----------------------------- */
+/* Dropdown Content (Hidden by Default) */
+/* ----------------------------- */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* ----------------------------- */
+/* Links inside the dropdown */
+/* ----------------------------- */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* ----------------------------- */
+/* Change color of dropdown links on hover */
+/* ----------------------------- */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* ----------------------------- */
+/* Show the dropdown menu on hover */
+/* ----------------------------- */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ----------------------------- */
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* ----------------------------- */
+.dropdown:hover .dropbtn {
+  background-color: rgb(28,82,190);
+}
+
